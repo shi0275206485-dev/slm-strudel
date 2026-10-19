@@ -1,0 +1,29 @@
+{
+  "name": "strudel-train-valid-pipeline",
+  "version": "1.0.0",
+  "type": "module",
+  "private": true,
+  "scripts": {
+    "validate": "node strudel_headless_validate.mjs",
+    "split": "node strudel_split_jsonl.mjs",
+    "pipeline": "node strudel_pipeline.mjs",
+    "postinstall": "node fix_kabelsalat_exports.mjs"
+  },
+  "dependencies": {
+    "@strudel/core": "latest",
+    "@strudel/mini": "^1.2.6",
+    "@strudel/tonal": "^1.2.6",
+    "@strudel/transpiler": "latest",
+    "@strudel/xen": "latest",
+    "acorn": "^8.16.0",
+    "acorn-walk": "^8.3.5"
+  },
+  "description": "Node tools for the SLM Strudel code-generation project",
+  "main": "index.js",
+  "keywords": [],
+  "author": "",
+  "license": "AGPL-3.0-only",
+  "devDependencies": {
+    "esbuild": "^0.28.1"
+  }
+}

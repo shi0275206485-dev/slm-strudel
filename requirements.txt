@@ -1,0 +1,18 @@
+# Versions logged by the training run: torch 2.10.0+cu130, unsloth 2026.6.9,
+# transformers 5.5.0, triton 3.6.0. Install torch for your CUDA version first:
+# https://pytorch.org/get-started/locally/
+torch
+unsloth
+transformers
+trl
+peft
+datasets
+accelerate
+huggingface_hub
+playwright
+librosa
+scikit-image
+scipy
+numpy
+matplotlib
+tqdm

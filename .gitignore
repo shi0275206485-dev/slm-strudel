@@ -1,0 +1,24 @@
+# build product -- rebuild with the commands in README.md
+node/hap_query_bundle.mjs
+node/hap_query_bundle.mjs.bak
+node/node_modules/
+
+# model outputs, adapters, audio and scores
+python/out_*/
+python/audio_capture/
+python/batch_results/
+python/**/finetuned_*_seed*.jsonl
+python/**/baseline_*_seed*.jsonl
+python/**/ablation_*_seed*.jsonl
+*.wav
+*.safetensors
+*.bin
+
+# Python / Jupyter
+__pycache__/
+*.pyc
+.ipynb_checkpoints/
+
+# secrets
+.env
+*.token
